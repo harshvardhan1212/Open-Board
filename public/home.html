@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/styel.css">
+    <title>Open Board</title>
+</head>
+
+<body>
+    <div class="options-cont">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="tools-cont scale-tools">
+        <img class="pencil" src="icons/pencil.svg" />
+        <img class="eraser" src="icons/eraser.svg" />
+        <img class="photo" src="icons/photo.svg" />
+        <img class="download" src="icons/download.svg" />
+        <img class="notepad" src="icons/notepad.svg" />
+        <img class="redo" src="icons/redo.svg" />
+        <img class="undo" src="icons/undo-arrow.svg" />
+        <img class="new" src="icons/new-page.svg" />
+    </div>
+    <div class="pencil-tool-cont">
+        <div class="pencilwidth-tool-cont">
+            <input type="range" min="2" max="19" value="3" class="pencilwidt-tool-cont">
+        </div>
+        <div class="pencil-colour-cont">
+            <div class="black pencil-colour"></div>
+            <div class="red pencil-colour"></div>
+            <div class="blue pencil-colour"></div>
+        </div>
+    </div>
+    <div class="ereser-tool-cont">
+        <input type="range" min="2" max="50" value="4" class="ereserz-tool-cont">
+    </div>
+    <div class="sticky-cont">
+        <!-- <div class="header-cont">
+            <div class="minimize-cont"></div>
+            <div class="remove-cont"></div>
+        </div>
+        <div class="note-cont">
+            <textarea></textarea>   
+        </div> -->
+    </div>
+    <div class="newpage">
+        <div class="first">
+            <h2>OPEN BOARD</h2>
+        </div>
+        <div class="second">
+            <h3>Do you wan't to save changes to Board?</h3>
+        </div>
+        <div class="function">
+            <div class="save">save
+                <!-- <a href="index.html" class="abc"></a> -->
+            </div>
+            <div class="continue">
+                <a href="home.html" class="continu">Don't save</a>
+            </div>
+
+            <div class="cancel">Cancel</div>
+        </div>
+    </div>
+    <canvas> </canvas>
+    <script src="./work.js"></script>
+    <script src="./canvas.js"></script>
+</body>
+
+</html>
